@@ -12,6 +12,7 @@
                     <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
                 </h2>
 		    	<p class="body">{{ $post->body }}</p>
+                <a href="/chat/{{ $post->user->id }}">{{ $post->user->name }}とチャットする</a>
                 <small>{{ $post->user->name }}</small>
 		@endforeach
 	</div>
